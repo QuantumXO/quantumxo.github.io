@@ -4,7 +4,7 @@ $(function($){
     $(document).on("scroll",function(){
 		
 		var headerNav = $(".header-nav");
-		if($(document).scrollTop() > 50 || $(document).offset().top > 50){
+		if($(document).scrollTop() > 50){
 			headerNav.removeClass("normal").addClass("scroll");
 		} else{
 			headerNav.removeClass("scroll").addClass("normal");
