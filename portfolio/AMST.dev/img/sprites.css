@@ -1,0 +1,40 @@
+.advantages-1, .advantages-2, .advantages-3, .advantages-4, .advantages-5, .advantages-6{
+	background: url(sprites.png) no-repeat;
+}
+
+.advantages-1{
+	background-position: -2px -2px ;
+	width: 63px;
+	height: 29px;
+}
+
+.advantages-2{
+	background-position: -70px -4px ;
+	width: 52px;
+	height: 41px;
+}
+
+.advantages-3{
+	background-position: -141px -11px ;
+	width: 70px;
+	height: 18px;
+}
+
+.advantages-4{
+	background-position: -217px -7px ;
+	width: 58px;
+	height: 30px;
+}
+
+.advantages-5{
+	background-position: -287px -10px ;
+	width: 63px;
+	height: 29px;
+}
+
+.advantages-6{
+	background-position: -360px -11px ;
+	width: 63px;
+	height: 29px;
+}
+
