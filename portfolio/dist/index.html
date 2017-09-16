@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Test PAGE</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/favicon (2).ico">
+	<script src="js/libs/jquery-2.1.4.js"></script>
+</head>
+<style>
+	#nav li{display: inline-block;background-color: #eaeaea;}
+	#nav a{padding: 10px;display: inline-block;text-decoration: none;}
+</style>
+<body> 
+
+<ul id="nav">
+	<li class="active"><a href="#">0001</a></li>
+	<li><a href="#">0002</a></li>
+	<li><a href="#">0003</a></li>
+	<li><a href="#">0004</a></li>
+	<li><a href="#">0005</a></li>
+</ul>
+<br><br><br>
+<div id="tabs" class="tabs">
+	<div class="tabs-nav">
+		<a href="#tab1" class="tabs-nav-link active">Link 1</a>
+		<a href="#tab2" class="tabs-nav-link">Link 2</a>
+		<a href="#tab3" class="tabs-nav-link">Link 3</a>
+	</div>
+	<div class="tab-container">
+		<div id='tab1' class="tab-content active">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat consequuntur facilis quos tempora iste dolorem modi, error ab aliquid provident laborum nam. Sapiente, rem? Nam obcaecati, tenetur deleniti voluptatum. Tempora.
+		</div>
+		<div id='tab2' class="tab-content">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus obcaecati pariatur tenetur cupiditate consectetur excepturi minus perferendis officiis nulla atque aspernatur consequuntur dolorum assumenda adipisci molestias ipsum, vitae animi quo?
+		</div>
+		<div id='tab3' class="tab-content">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, maiores, nostrum repellat aperiam commodi officiis voluptates voluptas sit labore laboriosam incidunt distinctio dicta magnam. Doloremque aliquid consequuntur impedit quisquam. Enim?
+		</div>
+	</div>
+</div>
+<button id="popUp">Open Modal</button>
+<div id="popModal" class="modal">
+	<div class="modal-content">
+		<span class="modal-close">x</span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+</div>
+<div class="slider-wrap" id='slider'>
+	<div class="slider-container">
+		<div class="slider-item fade">
+			<img src="img/1.jpg" class="slide-img" alt="slide">
+			<div class="slide-content">Text</div>
+		</div>
+		<div class="slider-item fade">
+			<img src="img/4.jpg" class="slide-img" alt="slide">
+			<div class="slide-content">Text</div>
+		</div>
+		<div class="slider-item fade">
+			<img src="img/6.jpg" class="slide-img" alt="slide">
+			<div class="slide-content">Text</div>
+		</div>
+	</div>
+	<div id='sliderArrow' class="slider-btn-wrap">
+		<button class="slider-btn slide-prev" data-action='prev'>&#10094</button>
+		<button class="slider-btn slide-next" data-action='next'>&#10095</button>
+	</div>
+	<div class="slider-nav">
+		<span class="slide-dot"></span>
+		<span class="slide-dot"></span>
+		<span class="slide-dot"></span>
+	</div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+	'use strict';
+	
+function TabFunc(){
+	//var tabs = document.getElementById('tabs');
+	var tabNav = document.querySelector('.tabs-nav');
+	var tabLink = document.querySelectorAll('.tabs-nav-link');
+	var tabContent = document.querySelectorAll('.tab-content');
+	
+	tabNav.addEventListener('click', function(e){
+		e.preventDefault();
+		var target = e.target;
+		if(target.className == 'tabs-nav-link'){
+			for(var i=0; i<tabLink.length; i++){
+				tabLink[i].classList.remove('active');
+			}
+			target.classList.add('active');
+			for(var i=0; i<tabContent.length; i++){
+				tabContent[i].classList.remove('active');
+			}
+			var attr = target.getAttribute('href');
+			document.querySelector(attr).classList.add('active');
+		}
+		
+	});	
+}	
+TabFunc();
+
+function modalFunc(){
+	/////////////////////
+	var modal = document.getElementById('popModal');
+	var open = document.getElementById('popUp');
+	var close = document.getElementsByClassName('modal-close')[0];
+	
+	open.onclick = function(){
+		modal.style.display = 'block';
+	};
+	
+	close.onclick = function(){
+		modal.style.display = 'none';
+	};
+	
+	window.onclick = function(e){
+		if(e.target == modal){
+			modal.style.display = 'none';
+			console.log(e.target);
+		}
+	};	
+}
+modalFunc();
+	
+var s1 = new Slider({
+	sliderId: 'slider',
+	slidesToShow: 3,
+	infinite: true,
+});
+	
+	
+	console.log();
+	console.log();
+	console.log();
+	console.log();
+	console.log();
+	console.log();
+	console.log();
+	console.log();
+	console.log();
+
+	
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
