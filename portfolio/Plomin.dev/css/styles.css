@@ -470,6 +470,7 @@ header {
   text-align: center;
   position: relative;
   background: #000 url(../img/gallery-bg.jpg) no-repeat center;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   background-size: cover;
   z-index: 99; }
@@ -1048,9 +1049,9 @@ footer {
 @media (min-width: 375px) and (max-width: 425px) {
   .header_slider-content .arrows:first-child {
     top: -3px;
-    left: 34px; }
+    left: 24px; }
   .header_slider-content .arrows:last-child {
-    right: 34px;
+    right: 24px;
     bottom: -5px; }
   .footer-map {
     width: 80%; }
