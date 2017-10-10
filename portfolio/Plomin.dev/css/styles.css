@@ -971,6 +971,8 @@ footer {
     height: 400px; }
     footer .row {
       text-align: center; }
+  .google-map {
+    width: 100%; }
   .footer-map {
     width: 90%;
     height: auto;
