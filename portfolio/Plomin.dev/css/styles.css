@@ -552,6 +552,11 @@ footer {
   footer .row {
     position: relative; }
 
+.google-map {
+  height: 300px;
+  margin-top: 30px;
+  border: 1px solid #c1272c; }
+
 .footer-map {
   z-index: 99; }
 
@@ -737,7 +742,7 @@ footer {
     right: 24px;
     position: absolute; }
   .footer-bottom {
-    margin-top: 211px;
+    margin-top: -10px;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%; }
   .footer-inner {
