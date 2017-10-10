@@ -7,7 +7,7 @@
 	<meta name="keywords" content="">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
 <header>
@@ -17,12 +17,11 @@
 			<a href="#" class="nav-open" id="openNav"><span class="hamburger"></span></a>
 			<nav class="header-nav" id="headerNav">
 				<ul class="header_nav-list">
-					
 					<li class="header_nav-item header_nav-item-logo"><img src="img/header-logo.png" width="166" height="75" alt="logo"></li>
-					<li class="header_nav-item"><a href="#" class="header_nav-link active">хто ми?</a></li>
-					<li class="header_nav-item"><a href="#" class="header_nav-link">наші заходи</a></li>
-					<li class="header_nav-item"><a href="#" class="header_nav-link">фото/відео</a></li>
-					<li class="header_nav-item"><a href="#" class="header_nav-link">контакти</a></li>
+					<li class="header_nav-item"><a href="#mainWhoWe" class="header_nav-link active">хто ми?</a></li>
+					<li class="header_nav-item"><a href="#mainEvents" class="header_nav-link">наші заходи</a></li>
+					<li class="header_nav-item"><a href="#mainGallery" class="header_nav-link">фото/відео</a></li>
+					<li class="header_nav-item"><a href="#contancts" class="header_nav-link">контакти</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -110,7 +109,7 @@
 	</div>
 </header>
 <main>
-	<article class="main-whowe">
+	<article class="main-whowe" id="mainWhoWe">
 		<div class="row clearfix">
 			<h3 class="main_whowe-title main-title">хто <span>ми</span>?</h3>
 			<ul class="main_whowe-list">
@@ -149,7 +148,7 @@
 			</ul>
 		</div><!-- //.row -->
 	</article>
-	<article class="main-events">
+	<article class="main-events" id="mainEvents">
 		<div class="row clearfix">
 			<h3 class="main_events-title main-title"><span>заходи</span></h3>
 		</div>
@@ -216,8 +215,8 @@
 			</div><!-- //.main_events-item -->
 		</div><!-- //.main_events-slider -->
 	</article>
-	<article class="main-gallery">
-		<div class="row">
+	<article class="main-gallery" id="mainGallery">
+		<div class="row clearfix">
 			<div class="main_gallery-tabs" id="mainGalleryTabs">
 				<ul class="main_gallery-list">
 					<li class="main_gallery-tab"><a href="#mainGalleryTab-1" class="main_gallery-link">фото</a></li>
@@ -239,14 +238,14 @@
 					</div>
 				</div>
 			</div>
+			<iframe class="google-map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1068.1368280113654!2d30.520339280881686!3d50.450937910860105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50853c3c51%3A0x6703d85b0d10b524!2z0L_RgNC-0LLRg9C70L7QuiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQsCwgNSwg0JrQuNGX0LI!5e0!3m2!1sru!2sua!4v1507665260231" width="600" height="450" frameborder="0" allowfullscreen></iframe>
+			<img src="img/map.png" class="footer-map" width="328" height="307" alt="Map">
 		</div>
 	</article>
 </main>
-<footer>
-	<div class="row clearfix">
-		<iframe class="google-map"src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1299.4999365518995!2d30.521811316300678!3d50.451035797833555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0L_RgNC-0LLRg9C70L7QuiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQsCA1LCDQmtC40LXQsiwg0LPQvtGA0L7QtCDQmtC40LXQsg!5e0!3m2!1sru!2sua!4v1507662692893" width="600" height="450" frameborder="0" allowfullscreen></iframe>
-		<img src="img/map.png" class="footer-map" width="328" height="307" alt="Map">
-	</div>
+<footer id="contancts">
+	<!--<div class="row clearfix">
+	</div>-->
 	<div class="footer-bottom">
 		<div class="row clearfix">
 			<div class="footer-inner clearfix">

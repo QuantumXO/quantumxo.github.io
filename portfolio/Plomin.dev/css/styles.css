@@ -547,14 +547,14 @@ header {
   background: url(../img/arrow-right.png) no-repeat center; }
 
 footer {
-  position: relative;
-  background-color: #474747; }
+  position: relative; }
   footer .row {
     position: relative; }
 
 .google-map {
+  float: left;
   height: 300px;
-  margin-top: 30px;
+  margin-top: 60px;
   border: 1px solid #c1272c; }
 
 .footer-map {
@@ -563,7 +563,9 @@ footer {
 .footer-bottom {
   width: 100%;
   height: 190px;
-  background: url(../img/footer-bottom.png) no-repeat; }
+  position: relative;
+  background: url(../img/footer-bottom.png) no-repeat;
+  z-index: 99; }
 
 .footer-inner {
   position: relative; }
@@ -721,7 +723,7 @@ footer {
     margin-left: -135.555px;
     bottom: -76px; }
   .main-gallery {
-    height: 800px; }
+    height: 970px; }
     .main-gallery .row {
       padding-top: 123px; }
   .main_gallery-slider {
@@ -735,14 +737,11 @@ footer {
   .main_gallery-item {
     width: 250px;
     height: 150px; }
-  footer {
-    height: 400px; }
   .footer-map {
-    top: -130px;
-    right: 24px;
-    position: absolute; }
+    float: right;
+    margin: 40px -90px 0; }
   .footer-bottom {
-    margin-top: -10px;
+    margin-top: -75px;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%; }
   .footer-inner {
