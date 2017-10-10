@@ -980,8 +980,8 @@ footer {
   .footer-bottom {
     height: 128px;
     margin-bottom: -10px;
-    -webkit-background-size: 100% 150px;
-    background-size: 100% 150px; }
+    -webkit-background-size: 130% 128px;
+    background-size: 130% 128px; }
   .footer-inner {
     top: 63px;
     padding: 0 10px; }
@@ -1076,7 +1076,7 @@ footer {
   .main_gallery-next {
     right: 1px; }
   .footer-bottom {
-    margin-top: -20px; } }
+    margin-top: -51px; } }
 
 @media (max-width: 320px) {
   .header_slider-content .arrows:first-child {
