@@ -762,6 +762,8 @@ footer {
     height: 418px; }
     .main_events-item .row {
       padding-left: 93px; }
+  footer {
+    height: 400px; }
   .footer-list {
     margin-right: 70px; }
   .footer-inner {
@@ -967,10 +969,8 @@ footer {
     margin: 0 auto; }
   .main_gallery-next {
     right: 4px; }
-  footer {
-    height: 400px; }
-    footer .row {
-      text-align: center; }
+  footer .row {
+    text-align: center; }
   .google-map {
     width: 100%; }
   .footer-map {
