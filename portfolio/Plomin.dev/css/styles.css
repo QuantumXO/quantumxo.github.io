@@ -732,8 +732,8 @@ footer {
 @media (min-width: 1224px) {
   .main_events-item {
     background: #fff url(../img/events-bg.png) no-repeat 0 0;
-    -webkit-background-size: 100% 100%;
-    background-size: 100%; } }
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto; } }
 
 @media (max-width: 1140px) {
   .main_events-item {
