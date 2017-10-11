@@ -548,6 +548,163 @@ header {
   right: 10px;
   background: url(../img/arrow-right.png) no-repeat center; }
 
+.main_images-gallery {
+  width: 966px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 400px;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+/*.main_images-gallery.blur
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 100vw
+	height: 100vh
+	position: fixed
+	min-width: 100vw
+	min-height: 100vh*/
+.main_images-item {
+  float: left;
+  width: 250px;
+  height: 166px;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-flex-basis: 250px;
+  -ms-flex-preferred-size: 250px;
+  flex-basis: 250px;
+  margin: 0 20px 0 0; }
+
+.main_images-item:nth-child(n+4) {
+  margin-top: 20px; }
+
+.main_images-content {
+  top: auto;
+  padding: 1px;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background: #c1272c;
+  -webkit-transition: all ease-in-out .5s;
+  -o-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+  font-family: Arial, sans-serif;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
+.main_images-img {
+  width: 100%;
+  height: 100%; }
+
+.main_images-content.active {
+  top: 50%;
+  width: 450px;
+  height: 300px;
+  position: fixed;
+  left: 50% !important;
+  margin: -150px 0 0 -225px;
+  z-index: 999; }
+  .main_images-content.active .main_images-close {
+    display: block; }
+
+.main_images-close:-webkit-any-link {
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  float: right;
+  width: auto;
+  height: auto;
+  color: #fff;
+  display: none;
+  font-weight: bold;
+  padding: 5px 10px 4px;
+  position: absolute;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #c1272c;
+  text-decoration: none;
+  text-decoration: none;
+  z-index: 9999; }
+
+.main_images-close:-moz-any-link {
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  float: right;
+  width: auto;
+  height: auto;
+  color: #fff;
+  display: none;
+  font-weight: bold;
+  padding: 5px 10px 4px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #c1272c;
+  text-decoration: none;
+  text-decoration: none;
+  z-index: 9999; }
+
+.main_images-close:any-link {
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  float: right;
+  width: auto;
+  height: auto;
+  color: #fff;
+  display: none;
+  font-weight: bold;
+  padding: 5px 10px 4px;
+  position: absolute;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #c1272c;
+  text-decoration: none;
+  text-decoration: none;
+  z-index: 9999; }
+
+.main_images-close:hover {
+  color: #c1272c;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 20px #fff;
+  box-shadow: 0 0 20px #fff; }
+
+.main_images-expand {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  background: transparent;
+  z-index: 99; }
+
+[id^=image]:target .close {
+  display: block; }
+
+#image-1:target, #image-2:target, #image-3:target {
+  left: 200px; }
+
 footer {
   position: relative; }
   footer .row {
@@ -556,7 +713,7 @@ footer {
 .google-map {
   float: left;
   height: 300px;
-  margin-top: 60px;
+  margin: 60px 0 110px;
   border: 1px solid #c1272c; }
 
 .footer-map {
@@ -722,10 +879,8 @@ footer {
     left: 50%;
     margin-left: -135.555px;
     bottom: -76px; }
-  .main-gallery {
-    height: 970px; }
-    .main-gallery .row {
-      padding-top: 123px; }
+  .main-gallery .row {
+    padding-top: 123px; }
   .main_gallery-slider {
     margin-left: -6px; }
     .main_gallery-slider .slick-slide:not(.slick-current) {
@@ -863,6 +1018,8 @@ footer {
     width: 100%;
     height: 100%;
     position: fixed;
+    min-width: 100%;
+    min-height: 100%;
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
