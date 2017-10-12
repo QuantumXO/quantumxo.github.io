@@ -549,7 +549,6 @@ header {
   background: url(../img/arrow-right.png) no-repeat center; }
 
 .main_images-gallery {
-  width: 966px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -565,16 +564,6 @@ header {
   -ms-flex-pack: distribute;
   justify-content: space-around; }
 
-/*.main_images-gallery.blur
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-	width: 100vw
-	height: 100vh
-	position: fixed
-	min-width: 100vw
-	min-height: 100vh*/
 .main_images-item {
   float: left;
   width: 250px;
@@ -588,11 +577,7 @@ header {
   flex-shrink: 0;
   -webkit-flex-basis: 250px;
   -ms-flex-preferred-size: 250px;
-  flex-basis: 250px;
-  margin: 0 20px 0 0; }
-
-.main_images-item:nth-child(n+4) {
-  margin-top: 20px; }
+  flex-basis: 250px; }
 
 .main_images-content {
   top: auto;
@@ -611,17 +596,6 @@ header {
 .main_images-img {
   width: 100%;
   height: 100%; }
-
-.main_images-content.active {
-  top: 50%;
-  width: 450px;
-  height: 300px;
-  position: fixed;
-  left: 50% !important;
-  margin: -150px 0 0 -225px;
-  z-index: 999; }
-  .main_images-content.active .main_images-close {
-    display: block; }
 
 .main_images-close:-webkit-any-link {
   top: 20px;
@@ -916,6 +890,24 @@ footer {
     background-size: 107% auto; }
     .main_events-item .row {
       padding-left: 93px; }
+  .main_images-gallery {
+    width: 966px; }
+  .main_images-item {
+    margin-right: 20px; }
+  .main_images-item:nth-child(n+4) {
+    margin-top: 20px; }
+  .main_images-content.active {
+    top: 50%;
+    width: 450px;
+    height: 300px;
+    position: fixed;
+    left: 50% !important;
+    margin: -150px 0 0 -225px;
+    z-index: 999; }
+    .main_images-content.active .main_images-close {
+      display: block; }
+  .footer-map {
+    width: auto; }
   footer {
     height: 400px; }
   .footer-list {
@@ -1131,11 +1123,16 @@ footer {
     margin: 0 auto; }
   .main_gallery-next {
     right: 4px; }
+  .main_images-gallery {
+    width: 100%; }
+  .main_images-item:nth-child(n+2) {
+    margin-top: 20px; }
   footer .row {
     text-align: center; }
   .google-map {
     width: 100%; }
   .footer-map {
+    width: 90%;
     height: auto;
     margin: 20px 0; }
   .footer-bottom {
@@ -1239,8 +1236,10 @@ footer {
 
 @media (max-width: 320px) {
   .header_slider-content .arrows:first-child {
-    top: -3px;
-    left: 4px; }
+    top: -30px;
+    left: -9px; }
   .header_slider-content .arrows:last-child {
-    right: 4px;
-    bottom: -5px; } }
+    right: -9px;
+    bottom: -29px; }
+  .footer-map {
+    margin-top: 0; } }
