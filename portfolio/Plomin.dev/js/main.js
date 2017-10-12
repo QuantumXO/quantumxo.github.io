@@ -18,6 +18,9 @@ $(function($){
 			e.preventDefault();
 			var id  = $(this).attr('href'),
 				top = $(id).offset().top;
+			nav.removeClass('visible');
+			openNav.removeClass('active');
+			$('body').removeClass('hidden');
 			$('body,html').animate({scrollTop: top}, 1500);
 		});
 		
