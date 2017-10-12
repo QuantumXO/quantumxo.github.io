@@ -56,7 +56,7 @@ $(function($){
 		});
 
 		 $("#mainGalleryTabs").tabs({
-			active: 0,
+			active: 1,
 		 });
 
 		$('.main_gallery-video').slick({
@@ -87,6 +87,8 @@ $(function($){
 			nextArrow: '<button type="button" class="main_gallery-arrow main_gallery-next"></button>',
 		});
 
+		
+		
 		function PhotoGallery(e){
 			var container = $('#mainImagesGallery');
 			var containerBlur = $('.main_images-gallery.blur');
@@ -94,6 +96,35 @@ $(function($){
 			var contentActive = $('.main_images-content.active');
 			var fullSizeLink = $('.main_images-expand');
 			var closeBtn = $('.main_images-close');
+			var photoGalleryImg = container.find('img');
+			
+			$.fn.imagesLoaded = function(callback){
+			  var elems = this.filter('img'),
+				  len   = elems.length;
+
+			  elems.bind('load',function(){
+				  if (--len <= 0){ callback.call(elems,this); }
+			  }).each(function(){
+				 // cached images don't fire load sometimes, so we reset src.
+				 if (this.complete || this.complete === undefined){
+					var src = this.src;
+					// webkit hack from http://groups.google.com/group/jquery-dev/browse_thread/thread/eee6ab7b2da50e1f
+					// data uri bypasses webkit log warning (thx doug jones)
+					this.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+					this.src = src;
+				 }  
+			  }); 
+
+			  return this;
+			};
+
+			photoGalleryImg.hide();
+			$('#loader').show();
+			photoGalleryImg.imagesLoaded(function(){
+				$(this).show();
+				$('#loader').hide();
+			});
+			
 			
 			container.find('a').on('click', function(e){
 				e.preventDefault();

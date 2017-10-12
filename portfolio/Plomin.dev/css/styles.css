@@ -866,6 +866,8 @@ footer {
   .main_gallery-item {
     width: 250px;
     height: 150px; }
+  .main_images-item:nth-child(n+4) {
+    margin-top: 20px; }
   .footer-map {
     margin: 40px -90px 0; }
   .footer-bottom {
@@ -908,8 +910,6 @@ footer {
       display: block; }
   .footer-map {
     width: auto; }
-  footer {
-    height: 400px; }
   .footer-list {
     margin-right: 70px; }
   .footer-inner {
@@ -1132,7 +1132,6 @@ footer {
   .google-map {
     width: 100%; }
   .footer-map {
-    width: 90%;
     height: auto;
     margin: 20px 0; }
   .footer-bottom {
@@ -1186,16 +1185,18 @@ footer {
     text-align: center; }
   .main_events-topic, .main_events-content {
     max-width: 100%; }
-  .main-gallery {
-    height: 450px; }
+  .main_images-item:nth-child(n+2) {
+    margin-top: 0; }
+  .main_images-item:nth-child(n+4) {
+    margin-top: 20px; }
+  .google-map {
+    float: none; }
   .footer-map {
     width: 328px;
-    top: -105px;
-      top-right: 24px;
-    position: absolute; }
+    margin-top: 0; }
   .footer-bottom {
     height: 190px;
-    margin-top: 211px;
+    margin-top: -74px;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%; }
   .footer-inner {
@@ -1218,7 +1219,7 @@ footer {
   .footer-map {
     width: 80%; }
   .footer-bottom {
-    margin-top: -21px; } }
+    margin-top: -51px; } }
 
 @media (min-width: 320px) and (max-width: 375px) {
   .header_slider-content .arrows:first-child {
@@ -1242,4 +1243,5 @@ footer {
     right: -9px;
     bottom: -29px; }
   .footer-map {
+    width: 90%;
     margin-top: 0; } }
