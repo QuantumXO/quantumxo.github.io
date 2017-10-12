@@ -1221,11 +1221,11 @@ footer {
 
 @media (min-width: 375px) and (max-width: 425px) {
   .header_slider-content .arrows:first-child {
-    top: -3px;
-    left: 24px; }
+    top: -30px;
+    left: -9px; }
   .header_slider-content .arrows:last-child {
-    right: 24px;
-    bottom: -5px; }
+    right: -23px;
+    bottom: -29px; }
   .footer-map {
     width: 80%; }
   .footer-bottom {
@@ -1233,11 +1233,11 @@ footer {
 
 @media (min-width: 320px) and (max-width: 375px) {
   .header_slider-content .arrows:first-child {
-    top: -3px;
-    left: 14px; }
+    top: -30px;
+    left: -9px; }
   .header_slider-content .arrows:last-child {
-    right: 14px;
-    bottom: -5px; }
+    right: -9px;
+    bottom: -29px; }
   .main_gallery-prev {
     left: 1px; }
   .main_gallery-next {
