@@ -868,6 +868,16 @@ footer {
     height: 150px; }
   .main_images-item:nth-child(n+4) {
     margin-top: 20px; }
+  .main_images-content.active {
+    top: 50%;
+    width: 450px;
+    height: 300px;
+    position: fixed;
+    left: 50% !important;
+    margin: -150px 0 0 -225px;
+    z-index: 999; }
+    .main_images-content.active .main_images-close {
+      display: block; }
   .footer-map {
     margin: 40px -90px 0; }
   .footer-bottom {
